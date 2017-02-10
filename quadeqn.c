@@ -30,14 +30,20 @@ int main(int argc, char*argv[])
               
                    else
                          {
-                        solve_linear(int a,int b,int c);
+                        solve_linear(int b,int c);
                          }
               }
-          else
+          if (b*b-4*a*c < 0)
               {
               solve_quad(int a, int b, int c);
-              }
-     }    
+                
+                  else
+                        {
+                      solve_real(int a, int b, int c);
+                        }
+              }        
+      }
+return 0;
 }           
                                //sub programs
       
@@ -66,8 +72,12 @@ int main(int argc, char*argv[])
                                                 printf("%f - %fi\n", x_real , x_imag);
                                     }
                                           
-
-
-
+                              solve_linear()
+                              {
+                                    float x;
+                                         x = -c/b ;
+                                          printf("%f/n",x)
+                              }
+                              
 
 
