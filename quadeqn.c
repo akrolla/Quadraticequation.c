@@ -20,9 +20,9 @@ int main(int argc, char*argv[])
 {
       if (argc==4)
       {
-        sscanf("%d" ,&a) ;
-        sscanf("%d" ,&b) ;
-        sscanf("%d" ,&c) ;
+        sscanf(argv[1],"%d" ,&a) ;
+        sscanf(argv[2],"%d" ,&b) ;
+        sscanf(argv[3],"%d" ,&c) ;
         
           if (a==0 && b==0)
               {
