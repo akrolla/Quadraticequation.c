@@ -11,7 +11,7 @@ Quadratic Equation
 void solve_linear();
 void solve_quad();
 void solve_real();
-void solve_complex;
+void solve_complex();
 int a; int b; int c;
 
 // Main program
@@ -25,12 +25,22 @@ int main(int argc, char*argv[])
         sscanf("%d" , c) ;
         
           if (a==0 && b==0)
-            {
+              {
               printf("Error. Degenerate Equation! \n");
-            }
-         else
-         {
-         solve_linear(a,b,c);
+              }
+           else
+              {
+              solve_linear(a,b,c);
+              }
+      }
+      else
+      {
+            solve_quad(a,b,c);
+      }
+            
+            
+     
+       
 }
 
 
